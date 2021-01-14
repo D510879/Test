@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div { font: 12px arial, sans-serif;
+	
+}
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<script>
+$(document).ready(function(){
+
+
+    $("#item1").click(function(){
+       
+	   $("#item1").appendTo("#div1");
+	   
+    });
+    $("#item2").click(function(){
+        $("#item2").appendTo("#div1");
+    });
+	 $("#item3").click(function(){
+        $("#item3").appendTo("#div1");
+    });
+	 $("#item4").click(function(){
+        $("#item4").appendTo("#div1");
+    });
+	 $("#item5").click(function(){
+        $("#item5").appendTo("#div1");
+    });
+	 $("#item6").click(function(){
+        $("#item6").appendTo("#div1");
+    });
+	 $("#item6").click(function(){
+        $("#item6").appendTo("#div1");
+    });
+	 $("#item7").click(function(){
+        $("#item7").appendTo("#div1");
+    });
+	 $("#item8").click(function(){
+        $("#item8").appendTo("#div1");
+    });
+	 $("#item9").click(function(){
+        $("#item9").appendTo("#div1");
+    });
+	 $("#item10").click(function(){
+        $("#item10").appendTo("#div1");
+    });
+	 $("#item11").click(function(){
+        $("#item11").appendTo("#div1");
+    });
+	 $("#item12").click(function(){
+        $("#item12").appendTo("#div1");
+    });
+	 $("#item13").click(function(){
+        $("#item13").appendTo("#div1");
+    }); 
+	$("#item14").click(function(){
+        $("#item14").appendTo("#div1");
+    });
+	 $("#item15").click(function(){
+        $("#item15").appendTo("#div1");
+    });
+	 $("#item16").click(function(){
+        $("#item16").appendTo("#div1");
+    }); 
+	$("#item17").click(function(){
+        $("#item17").appendTo("#div1");
+    });
+	$("#item18").click(function(){
+        $("#item18").appendTo("#div1");
+    });
+	$("#item19").click(function(){
+        $("#item19").appendTo("#div1");
+    });
+	$("#item20").click(function(){
+        $("#item20").appendTo("#div1");
+    });
+	$("#item21").click(function(){
+        $("#item21").appendTo("#div1");
+    });
+	
+});	
+	
+
+
+
+//Angular for data binding
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.firstname = "";
+     
+});
+
+
+</script>
+</head>
+<body>
+<div>
+In general terms the feedback for your work is shown in the rubric.
+<br> <br>
+  
+
+In addition to the rubric these comments are intended to give further feedback and/or help you improve your work in the future.  
+</div>
+<div id="div1"> 
+ <br>
+
+  </div>
+
+
+
+<div ng-app="myApp" ng-controller="myCtrl">
+    {{firstname}} <br> <br>
+-------------------------------------------------------------------------------------------------------- <br>	
+	<textarea rows="4" cols="50" ng-model="firstname">
+   
+   
+   
+</textarea>
+
+	</div>
+
+
+ <div class="row">
+<br>
+<div class="col-sm-4" style="background-color:lavender;">
+
+Introduction  
+<p id="item1">Introduction; you have an excellent choice of organization and your work makes extensive use of the module materials. 
+</p>
+<p id="item2">Introduction; you have a very good choice of organization and you have made use of the module materials.  </p>
+<p id="item3">Introduction; you have a fairly good choice of organization and you have made some reference to the module materials but not in away that shows that you fully understand the material.  </p>
+<p id="item4">Introduction; you organization should have been made clearer and been related to the module materials more extensively.</p>
+----------------------------------------
+<p> Cloud Recommendations </p>
+<p id="item5">An excellent set of recommendations which shows an insightful understanding of cloud computing technology.</p>
+<p id="item6">A very good set of recommendations which shows a good understanding of cloud computing technology. </p>
+<p id="item7">A good set of recommendations which shows a solid understanding of cloud computing technology. However, there were further opportunities for in depth explanations of how the technology could relate to your organization which could have been made.   </p>
+<p id="item20">There is some material in response to the recommendations however the explanation is brief and does not demonstrate in depth knowledge of the module material. </p>
+
+</div>
+ <div class="col-sm-4" style="background-color:lavenderblush;">
+<br>
+Regression Analysis
+<p id="item8">An excellent explanation of how regression analysis could be used for your organization. </p> 
+
+<p id="item9">A good explanation of how regression analysis could be used for your organization.</p>
+
+<p id="item10">A clearer explanation about the organization data and its utility for RA would have been helpful. </p>
+---------------------------------------- <br>
+Data Analytics
+<p id="item11">An excellent recommendation of a data analytics technique and thorough explanation of how it could be used for your organization.  </p>
+
+<p id="item12"> A good recommendation of a data analytics technique for your organization which could have been improved with more discussion of the reasoning behind your decision.  </p>
+
+<p id="item13"> A clearer explanation about the use of the data and data analytics for your organisation would have been helpful.</p>
+<br>
+---------------------------------------- <br>
+MISSING
+<p id="item21">Your work is missing, or is very brief about, key element(s) for instance; </p>
+
+<br>
+</div>
+
+ <div class="col-sm-4" style="background-color:lavender;">
+Peer Review <br>
+<p id="item14">Excellent peer review.  Answers to questions are accurate.  The examples and explanations are clear and insightful.
+</p>
+<p id="item15">Very good peer review.  Answers to questions are accurate.  The examples and explanations are for the most part clear and comprehensive.
+</p>
+<p id="item16">Moderately good peer review.  Answers to questions were mostly accurate.  The examples and explanations were clear although not comprehensive.
+</p>
+
+<p id="item17">Satisfactory peer review.  Answers to questions were somewhat accurate.  The examples and explanations were, although missing for flawed, relevant.
+ </p>
+
+<p id="item18">Little or no response with significant elements missing or flawed for the peer review 
+ </p>
+---------------------------------------- <br>
+Extra
+
+<p id="item19"> Your submission doesn't have comprehensive explanations, this may be because you didn't use all the available module material.</p>
+
+</div>
+</div>
+</body>
+</html>
