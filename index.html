@@ -19,6 +19,32 @@ div { font: 12px arial, sans-serif;
 
 
 <script>
+function copyClipboard() {
+  var elm = document.getElementById("div1");
+  // for Internet Explorer
+
+  if(document.body.createTextRange) {
+    var range = document.body.createTextRange();
+    range.moveToElementText(elm);
+    range.select();
+    document.execCommand("Copy");
+    alert("Copied div content to clipboard");
+  }
+  else if(window.getSelection) {
+    // other browsers
+
+    var selection = window.getSelection();
+    var range = document.createRange();
+    range.selectNodeContents(elm);
+    selection.removeAllRanges();
+    selection.addRange(range);
+    document.execCommand("Copy");
+    //alert("Copied div content to clipboard");
+  }
+}
+
+
+
 $(document).ready(function(){
 
 
@@ -107,6 +133,7 @@ app.controller('myCtrl', function($scope) {
 </script>
 </head>
 <body>
+<div id="div1"> 
 <div>
 In general terms the feedback for your work is shown in the rubric.
 <br> <br>
@@ -114,24 +141,32 @@ In general terms the feedback for your work is shown in the rubric.
 
 In addition to the rubric these comments are intended to give further feedback and/or help you improve your work in the future.  
 </div>
-<div id="div1"> 
- <br>
+<br> 
+
 
   </div>
 
 
 
-<div ng-app="myApp" ng-controller="myCtrl">
+
+<div ng-app="myApp" ng-controller="myCtrl" >
     {{firstname}} <br> <br>
+	
+
+	
 -------------------------------------------------------------------------------------------------------- <br>	
 	<textarea rows="4" cols="50" ng-model="firstname">
    
    
    
 </textarea>
+</div>	
+	
 
-	</div>
-
+	
+<br/><br/>
+   <button onclick="copyClipboard()">Copy comments to clipboard</button>
+   <br/><br/>
 
  <div class="row">
 <br>
